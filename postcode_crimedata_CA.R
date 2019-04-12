@@ -36,8 +36,6 @@ NIPostcodes
 
 new_data_1 <- subset(NIPostcodes, Town== 'LIMAVADY')# extract the dataframe contaning the town name LIMAVADY.
 new_data_1
-#Limavady_data <- subset(new_data_1$Locality,new_data_1$Townland,new_data$Town)
-#dfnew5 <- subset(diamonds, select=c("color", "carat", "price"))
 Limavady_data <-subset(new_data_1, select = c(9,10,11))# create a dataset called Limavady_data with locality,townland and town 
 Limavady_data
 write.csv(Limavady_data,"CleanNIPostcodeData.csv") #save data as CleanNIPostcodeData.csv
